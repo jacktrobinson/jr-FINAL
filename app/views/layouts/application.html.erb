@@ -9,7 +9,7 @@
 
 <body class="<%=controller.controller_name%>">
 	<div id="banner">
-		<%= @page_title || "The Lacrosse Shop" %>
+		<%= @page_title || "John Robinson's Lacrosse Shop" %>
 	</div>
 	<div id="columns">
 		<div id="side">
@@ -20,10 +20,10 @@
 			<% end %>
 			
 			<ul>
-				<li><a href="http://jr-final.herokuapp.com">Home</a></li>
-				<li><a href="https://www.google.com/search?hl=en&gl=us&tbm=nws&q=john+robinson+store">News</a></li>
-				<li><a href="http://jr-final.herokuapp.com">Contact</a></li>
+				<li><a href="http://jr-finalproject.herokuapp.com">Home</a></li>
+				<li><a href="https://www.google.com/search?hl=en&gl=us&tbm=nws&q=john+robinson+lacrosse+shop">News</a></li>
 			</ul>
+			<%= button_to 'Admin Login', login_path %>
 			
 			<% if session[:user_id] %>
 			<ul>
